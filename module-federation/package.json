@@ -1,0 +1,22 @@
+{
+  "name": "module-federation",
+  "version": "1.0.0",
+  "description": "webpack 模块联邦测试",
+  "private": true,
+  "main": "index.js",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "wsrun --parallel start",
+    "build": "yarn workspaces run build",
+    "dev": "wsrun --parallel dev"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "wsrun": "^5.2.4"
+  }
+}

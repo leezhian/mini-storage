@@ -1,0 +1,21 @@
+.app-container {
+  padding: 20px;
+}
+
+.app-form {
+  display: flex;
+  align-items: center;
+}
+
+.app-form-item {
+  flex: none;
+  width: auto;
+}
+
+.app-form-btn {
+  margin-left: 10px;
+}
+
+.insert-input {
+  width: 200px !important;
+}
