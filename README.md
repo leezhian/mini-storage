@@ -24,5 +24,5 @@
 | blind-watermark      | 盲水印实现                                    |
 | myPromise            | promise原理实现                               |
 | func-components      | DragSort 拖拽排序组件；WaterFall 瀑布流组件   |
-|                      |                                               |
+| mult-window-animation     | 跨浏览器动画效果   |
 
