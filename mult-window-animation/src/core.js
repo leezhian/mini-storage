@@ -1,7 +1,6 @@
 import * as THREE from 'three'
 import WindowManager from './WindowManager.js'
 
-let initialized = false
 const deviceInfo = {
   width: window.innerWidth,
   height: window.innerHeight,
@@ -123,7 +122,7 @@ function updateNumberOfSpheres() {
     c.setHSL(0.1 * i, 1.0, 0.5)
 
     const r = 100 + i * 20
-    const geometry = new THREE.SphereGeometry(r, 16, 8)
+    const geometry = new THREE.SphereGeometry(r, 32, 16)
     const material = new THREE.PointsMaterial({
       color: c,
     })
@@ -173,7 +172,6 @@ function render() {
 }
 
 export function init() {
-  initialized = true
   window.addEventListener('resize', resizer)
   setupScene()
   setupWindowManager()
